@@ -4,7 +4,7 @@ const CommonModalForm = () => {
             id="default-modal"
             tabIndex={-1}
             aria-hidden="true"
-            className="overflow-y-auto overflow-x-hidden fixed z-50 justify-center inset-x-0 max-w-max mx-auto items-center h-[calc(100%-1rem)] max-h-full w-full"
+            className="hidden overflow-y-auto overflow-x-hidden fixed z-50 justify-center inset-x-0 max-w-max mx-auto items-center h-[calc(100%-1rem)] max-h-full w-full"
         >
             <div className="relative p-4 w-full max-w-sm">
                 <div className="relative bg-white rounded-lg shadow-lg dark:bg-gray-700">
