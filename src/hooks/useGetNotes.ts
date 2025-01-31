@@ -16,7 +16,7 @@ const useFetchNotes = () => {
                 setNotes(res);
             }
         } catch (err) {
-            console.error("Empty Players", err);
+            console.error("Empty Notes", err);
             setIsServerError(true);
         } finally {
             setIsLoading(false);
