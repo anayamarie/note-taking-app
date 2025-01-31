@@ -106,7 +106,7 @@ const App = () => {
                         />
                     )}
                     <div className="flex flex-wrap mt-10 justify-center">
-                        {notes.map(({ _id, title, content }) => (
+                        {(notes || []).map(({ _id, title, content }) => (
                             <div>
                                 <CommonCard
                                     title={title}
