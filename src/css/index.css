@@ -42,23 +42,4 @@ body {
         py-6 sm:px-6 
         lg:px-8;
     }
-    .body-container-styled {
-        @apply relative 
-        overflow-x-auto 
-        shadow-md 
-        sm:rounded-lg;
-    }
-    .body-container-border {
-        @apply w-full 
-        max-w-5xl 
-        p-5 
-        bg-white 
-        border 
-        border-gray-200 
-        rounded-lg 
-        shadow 
-        sm:p-8 
-        dark:bg-gray-800 
-        dark:border-gray-700;
-    }
 }

@@ -1,25 +1,15 @@
 import axios from "axios";
 const API_URL: string = process.env.REACT_APP_API_URL as string;
 
-export default async ({
-    payload = {},
-    id = "",
-}: {
-    payload: {};
-    id: string;
-}) => {
+export default async ({ payload = {} }: { payload: {} }) => {
     const cancelToken = axios.CancelToken;
     const sourceToken = cancelToken.source();
-    const URL = `${API_URL}/notes/${id}`;
+    const URL = `${API_URL}/notes`;
     try {
         const res = await axios
-            .put(
-                URL,
-                { payload },
-                {
-                    cancelToken: sourceToken.token,
-                },
-            )
+            .post(URL, payload, {
+                cancelToken: sourceToken.token,
+            })
             .catch((error) => {
                 if (axios.isCancel(error)) {
                     console.log(
@@ -37,7 +27,7 @@ export default async ({
                 }
             });
 
-        if (res?.status !== 200) {
+        if (res?.status !== 201) {
             console.error("Unexpected result.");
             sourceToken.cancel("Operation Cancelled due to Unexpected Result");
             return;
