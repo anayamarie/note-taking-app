@@ -1,3 +1,6 @@
+## Vercel Domain
+https://note-taking-web-ph.vercel.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
