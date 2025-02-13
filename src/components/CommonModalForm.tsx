@@ -22,12 +22,11 @@ const CommonModalForm = ({
         <div
             id="default-modal"
             tabIndex={-1}
-            aria-hidden="true"
             className={`${
                 isFormVisible ? "" : "hidden"
-            } overflow-y-auto overflow-x-hidden fixed z-50 justify-center inset-x-0 max-w-max mx-auto items-center h-[calc(100%-1rem)] max-h-full w-full`}
+            } overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(70%-1rem)] max-h-full flex`}
         >
-            <div className="relative p-4 w-full max-w-sm">
+            <div className="relative p-4 w-full max-w-lg">
                 <div className="relative bg-white rounded-lg shadow-lg dark:bg-gray-700">
                     <div className="flex items-center justify-between p-4 md:p-5 border rounded-t dark:border-gray-600 border-gray-200">
                         <input
